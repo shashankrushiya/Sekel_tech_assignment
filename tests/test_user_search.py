@@ -2,6 +2,7 @@ from config.config import USERNAME, PASSWORD
 from pages.dashboard_page import DashboardPage
 from pages.login_page import LoginPage
 
+
 def test_user_search(browser):
     page = browser.new_page()
     

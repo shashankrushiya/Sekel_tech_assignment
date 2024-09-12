@@ -1,4 +1,6 @@
+import pytest
 from playwright.sync_api import Page
+
 
 class LoginPage:
     def __init__(self, page: Page):
@@ -16,4 +18,4 @@ class LoginPage:
         self.page.click(self.login_button)
 
     def verify_login(self):
-        return self.page.locator('span.oxd-userdropdown-name').text_content()
+        return self.page.locator('p.oxd-userdropdown-name').text_content()

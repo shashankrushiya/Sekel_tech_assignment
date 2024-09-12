@@ -1,27 +1,29 @@
 # HRM Web Application Automation Test Suite
 
-This project provides an automation test suite for a sample HRM web application using **Playwright** for browser automation, **API testing**, and **Allure Report** for test reporting. The suite follows a modular design using the **Page Object Model (POM)** and is written in **Python**.
+This project provides an automation test suite for a sample HRM web application hosted at: [OrangeHRM Demo Site](https://opensource-demo.orangehrmlive.com) using **Playwright** for browser automation, **API testing**, and **Allure Report** for test reporting. The suite follows a modular design using the **Page Object Model (POM)** and is written in **Python**.
 
 ## Table of Contents
 1. [Requirements](#requirements)
 2. [Installation](#installation)
 3. [Project Structure](#project-structure)
-4. [How to Run Tests](#how-to-run-tests)
-5. [Generating Allure Reports](#generating-allure-reports)
-6. [Test Cases Description](#test-cases-description)
+4. [Key Components](#key-components)
+5. [How to Run Tests](#how-to-run-tests)
+6. [Generating Allure Reports](#generating-allure-reports)
+7. [Test Cases Description](#test-cases-description)
 
 ## Requirements
 
 Ensure you have the following installed on your system:
-- Python 3.7+
+- Python 3.8 or higher
+- [Playwright](https://playwright.dev/) for browser automation
 - Allure command-line tool (for generating test reports)
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sekel_tech/hrm-automation.git
-   cd hrm-automation
+   git clone https://github.com/shashankrushiya/Sekel_tech_assignment.git
+   cd Sekel_tech_assignment
 
 2. Install the required Python packages:
     ```bash
@@ -45,6 +47,8 @@ project/<br/>
 ├── api/<br/>
 │   └── api_utils.py        &nbsp;&nbsp;           # Utility functions for API testing<br/>
 │<br/>
+├──screenshots              &nbsp;&nbsp;           # Directory containing screenshots<br/>
+│<br/>
 ├── tests/<br/>
 │   ├── test_login.py       &nbsp;&nbsp;           # Test case for login<br/>
 │   ├── test_user_search.py   &nbsp;&nbsp;         # Test case for user search<br/>
@@ -53,6 +57,13 @@ project/<br/>
 │<br/>
 ├── pytest.ini             &nbsp;&nbsp;            # pytest configurations<br/>
 └── requirements.txt       &nbsp;&nbsp;            # Python dependencies<br/>
+
+## Key Components
+- **pages/**: Contains page object models (POM) for different pages of the web application.
+- **tests/**: Contains test cases for both UI and API testing.
+- **api/api_utils/**: Contains reusable utility functions for API testing.
+- **conftest.py**: Pytest configuration and setup (e.g., browser setup).
+
 
 ## How to RUN Tests
 
